@@ -14,7 +14,7 @@
 </head>
 <!-- END HEAD -->
 <!--START Body-->
-<body > 
+<body background="bb.gif" > 
 <div align="center">
 <h1> Welcome to The NBA Team Build </h1>
 <h2>Todays date is: <?php 

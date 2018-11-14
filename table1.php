@@ -13,7 +13,7 @@
 </head>
 <!-- END HEAD -->
 <body>
-<FORM action="add.php" method="post" name="form"  enctype="multipart/form-data">
+<FORM action="players.php" method="post" name="form"  enctype="multipart/form-data">
 <table border="1" cellpadding="3" cellspacing="3"
 
 	summary = "NBA Teams" >
@@ -27,7 +27,7 @@
 			$rs = mysqli_query($conn, "SELECT * FROM Team_Names ORDER BY TeamID ASC");
 		  ?>
            <!-- A student ca choose many subjects -->
-	      <select name="Team_Names[]" >
+	      <select name="Team_Names[]1" >
 	 	  <?PHP
 
 	 	  while ($row=mysqli_fetch_array($rs)){
@@ -45,7 +45,7 @@
 			$rs = mysqli_query($conn, "SELECT * FROM Team_Names ORDER BY TeamID ASC");
 		  ?>
            <!-- A student ca choose many subjects -->
-	      <select name="Team_Names[]" >
+	      <select name="Team_Names[]2" >
 	 	  <?PHP
 
 	 	  while ($row=mysqli_fetch_array($rs)){
@@ -63,7 +63,7 @@
 			$rs = mysqli_query($conn, "SELECT * FROM Team_Names ORDER BY TeamID ASC");
 		  ?>
            <!-- A student ca choose many subjects -->
-	      <select name="Team_Names[]" >
+	      <select name="Team_Names[]3" >
 	 	  <?PHP
 
 	 	  while ($row=mysqli_fetch_array($rs)){
@@ -81,7 +81,7 @@
 			$rs = mysqli_query($conn, "SELECT * FROM Team_Names ORDER BY TeamID ASC");
 		  ?>
            <!-- A student ca choose many subjects -->
-	      <select name="Team_Names[]" >
+	      <select name="Team_Names[]4" >
 	 	  <?PHP
 
 	 	  while ($row=mysqli_fetch_array($rs)){
@@ -99,7 +99,7 @@
 			$rs = mysqli_query($conn, "SELECT * FROM Team_Names ORDER BY TeamID ASC");
 		  ?>
            <!-- A student ca choose many subjects -->
-	      <select name="Team_Names[]" >
+	      <select name="Team_Names[]5" >
 	 	  <?PHP
 
 	 	  while ($row=mysqli_fetch_array($rs)){
