@@ -2,7 +2,7 @@
 $servername = 'localhost';
 $user = 'root';
 $pass = '';
-$dbname = 'mydatabase';
+$dbname = 'NBA';
 
 $conn = new mysqli($servername, $user, $pass, $dbname) or die("Could not connect: ");
 

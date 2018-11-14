@@ -9,12 +9,7 @@ $user_name=$_POST['user_name'];
 
 $password=$_POST['password'];
 
-  $pwd = md5($password);
-//$salt = 'csdnfgksdgojnmfnb';
-//$pwd = md5($salt.$password);
-//$pwd = hash('sha256',$password);
-//$pwd=password_hash($password, PASSWORD_DEFAULT, ['cost'=> 12]);
-//$pwd=password_hash($password, PASSWORD_DEFAULT);
+$pwd = md5($password);
 
 $sql = "SELECT user_name, password FROM registrationform WHERE user_name='" . $user_name . "' AND password='" . $pwd . "'";
 
@@ -37,7 +32,7 @@ header("Location:table1.php");
 else {
 $_SESSION["logged"] = 0;
 header("Location:tryagain.php");
- $msg = "Either your email or password is missing. Try again";
+ $msg = "Either your username or password is missing. Try again";
 
 }
 
